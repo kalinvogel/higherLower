@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.higherlower.startScreenController"
+      style="-fx-background-color: #e0e0e0; -fx-padding: 20;" prefWidth="350">
+
+    <Label text="Higher or Lower" style="-fx-font-size: 24; -fx-font-weight: bold;"/>
+    <!-- Game controls and information here -->
+    <VBox spacing="10">
+        <Label text="1. Choose the Skin that you think is more Expensive"/>
+        <Label text="2. List of skins are updated everytime you launch the app"/>
+        <Label text="3. Item prices are current market prices, pulled from the Steam Marketplace"/>
+        <Label text="4. Steam only allows so many requests every minute so be patient if it is taking awhile to get items"/>
+    </VBox>
+    <Button fx:id="startButton" text="Start Game" onAction="#handleStartButtonAction"/>
+</VBox>

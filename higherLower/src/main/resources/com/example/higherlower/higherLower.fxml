@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.image.ImageView?>
+<VBox alignment="CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.higherlower.higherLowerController" prefHeight="200" prefWidth="350">
+  <Label fx:id="highScoreLabel" text="High Score: 0"/>
+  <HBox spacing="20" alignment="CENTER">
+    <VBox alignment="CENTER" spacing="20">
+      <Label fx:id="item1Label" text="Item 1 Name"/>
+      <Button fx:id="item1Button" text="Higher" onAction="#handleItem1Action">
+        <graphic>
+          <ImageView fx:id="item1ImageView" fitWidth="50" fitHeight="50"/>
+        </graphic>
+      </Button>
+
+    </VBox>
+
+    <VBox alignment="CENTER" spacing="20">
+      <Label fx:id="item2Label" text="Item 2 Name"/>
+      <Button fx:id="item2Button" text="Higher" onAction="#handleItem2Action">
+        <graphic>
+          <ImageView fx:id="item2ImageView" fitWidth="50" fitHeight="50"/>
+        </graphic>
+      </Button>
+    </VBox>
+
+    <VBox>
+
+    </VBox>
+
+  </HBox>
+  <Label fx:id="answerLabel"/>
+
+  <Label fx:id="currScoreLabel" text="Current Score: 0" />
+
+</VBox>
